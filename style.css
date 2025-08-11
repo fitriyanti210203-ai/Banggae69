@@ -1,0 +1,35 @@
+
+:root{
+  --bg:#071b2d;
+  --card:#ffffffcc;
+  --accent:#ffcc00;
+  --muted:#d1d5db;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  min-height:100vh;
+  background-image: url('doraemon.jpg'), linear-gradient(120deg,#094067 0%, #071b2d 100%);
+  background-size: cover;
+  background-position: center;
+  color:#041426;
+}
+.container{max-width:980px;margin:0 auto;padding:28px;}
+.topbar{display:flex;align-items:center;gap:12px}
+.topbar h1{margin:0;color:#fff}
+.btn{margin-left:auto;background:var(--accent);padding:8px 12px;border-radius:8px;color:#000;text-decoration:none;font-weight:700}
+.hero{display:flex;justify-content:center;margin-top:28px}
+.card{background:rgba(255,255,255,0.9);padding:18px;border-radius:12px;width:100%;max-width:640px;box-shadow:0 10px 40px rgba(2,6,23,0.5)}
+.muted{color:var(--muted);margin-top:6px;margin-bottom:12px}
+
+.slot-board{display:flex;justify-content:center;gap:14px;margin:12px 0}
+.reel{width:120px;height:120px;border-radius:10px;background:#041426;color:#fff;display:flex;align-items:center;justify-content:center;font-size:56px;border:4px solid rgba(255,204,0,0.15)}
+
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:12px}
+.controls input{width:90px;padding:6px;border-radius:8px;border:1px solid #cbd5e1}
+.controls button{background:#ffcc00;border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer}
+.msg{margin-top:12px;font-weight:700}
+.foot{margin-top:18px;color:#fff;opacity:0.9}
+@media(max-width:520px){
+  .reel{width:88px;height:88px;font-size:36px}
+}
